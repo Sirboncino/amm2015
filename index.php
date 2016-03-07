@@ -119,7 +119,7 @@
     <h2>Accesso al progetto</h2>
     <p>
         La homepage del progetto si trova sulla URL <strong>(da modificare)</strong> 
-        <a href="php/login">http://spano.sc.unica.it/amm2014/davide/esami14/php/login</a>
+        <a href="php/login">http://spano.sc.unica.it/amm2015/toluRoberto/segnaliAMMo/php/login</a>
     <p>
     <p>Si pu&ograve; accedere alla applicazione con le seguenti credenziali</p>
     <ul>
