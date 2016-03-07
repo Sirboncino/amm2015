@@ -1,0 +1,910 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    overflow-y: scroll;  /*  per tenere la barra di scorrimento fissa */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    
+    background: url('../images/background_ccc.png') top left repeat-x;
+    background-color: #cccccc;
+}
+
+
+p {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #6669cc;
+}
+
+a:link {
+    color: #000099;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000099;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #990000;
+}
+
+
+h1, h2, h3 , h4, h5,h6 {
+    color: #000000;
+    line-height: 32px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 32px;
+    /* border-top: solid 1px #990000; */
+}
+
+h2 {
+    font-size: 22px;
+    /* border-top: solid 1px #009900; */
+    padding-top: 5px;
+}
+
+h3 {
+    font-size: 16px;
+    /* border-top: solid 1px #000099; */
+}
+
+
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    border-color: black;
+}
+
+
+#page {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+	
+    padding: 20px;
+    /* width: calc(80% - 40px); */
+    width: 964px;
+    background-color: white;
+    /* font-size: 14px; */
+    /* color: black; */
+    text-align: left;
+    box-shadow: 0 0 10px gray;	
+}
+
+#header {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding: 0;
+    clear: both; /* per gestire i div float */
+    /* border-bottom: 1px solid #bbbbbb; */
+}
+
+
+/* above bar */ 
+.above{
+    padding-bottom: 30px;
+}
+    
+
+.above p {
+    margin-right: 20px;
+    float: left;
+}
+
+
+p.logout{
+    background: url('../images/16_exit.png') no-repeat left center;
+}
+
+
+p.logout a:link, p.logout a:visited{
+    padding-left: 18px;
+}
+    
+
+
+
+
+
+
+div#logo h1 {
+    background-image: url('../images/logo_unica_dist_256x96.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-color: #cccccc;
+    height: 96px;
+    vertical-align: middle;
+    padding-left: 256px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 96px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    color: #444444;
+    display: block;
+}
+
+
+
+div#logo span {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #444444;
+} 
+
+
+
+
+/* menu */
+.menu {
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+	/* padding: 5px; */
+    border-bottom: solid 1px #666666;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.menu li {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 2px;
+
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+	/**display:inline; /* ie7 */
+}
+
+.menu a {
+    padding: 8px 8px;
+    text-decoration: none;
+    color: #000000;
+	/* line-height: 100%; */
+}
+.menu a:hover {
+    background: #999999;
+    color: #ffffff;
+    border-radius: 5px;
+
+	/* color: #000000; */
+}
+.menu .current_page_item a {
+    /* background: #999999; */
+    background: #666666;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+
+/* stile per i messaggi di errore */
+
+.error li {
+    list-style: none;
+}
+
+
+.error{
+    width: 80%;
+    background-color: #eeeeee;
+    border: 3px solid #cc3333;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.error div{
+    margin: 0px;
+    background: url('../images/32_warning.png') no-repeat left top;
+    min-height: 32px;
+    
+}
+
+/* stile per i messaggi di conferma */
+
+.confirm{
+    width: 80%;
+    background-color: #eeeeee;
+    border: 3px solid #33cc33;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.confirm div{
+    margin: 0px;
+    background: url('../images/32_checkmark2.png') no-repeat left top;
+    min-height: 32px;
+}
+
+
+
+
+
+
+/* Stili dei titoli dei content */
+
+.icon-title{
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: left 5px;
+}
+
+
+
+.panel{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.panel li a:link{
+    text-decoration:  none;
+    //color: #9e1616;
+}
+
+.panel li {
+    display: block;
+    position: relative;
+    width: 340px;
+    height: 72px;
+    //margin: auto;
+    margin-left: 5%;
+    margin-top: 15px;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    
+}
+   
+.panel li a {
+    display: block;
+    position: absolute;
+    /* per allineare il testo a meta' di un block il trucco e'
+     usare una line-height della stessa altezza del blocco */
+    line-height: 72px;
+    vertical-align: middle;
+    padding-left: 80px;
+    font-size: 1.6em;
+}
+
+
+/*
+.none{
+    list-style: none;
+}
+*/
+
+
+
+
+
+#h-login{
+    background-image: url('../images/32_enter.png');
+    /* background-repeat: no-repeat;
+    background-position: left 20px;
+    
+    /* padding-left: 20px;*/
+    /* margin-left: 0;*/
+    /* background: url('../images/32_enter.png') no-repeat left 20px; */
+    
+}
+    
+#h-home {
+    background-image: url('../images/32_home.png');
+}
+
+#h-anagrafica {
+    background-image: url('../images/32_user.png');
+}
+
+#h-utenti {
+    background-image: url('../images/32_users.png');
+}
+
+#h-cerca {
+    background-image: url('../images/32_search.png')
+}
+
+#h-dettaglio {
+    background-image: url('../images/32_binoculars.png')
+}
+
+#h-segnalazioni {
+    background-image: url('../images/32_ticket.png')
+}
+    
+#h-help {
+    background-image: url('../images/32_lifebuoy.png');
+}
+
+
+#pnl-anagrafica {
+    background-image: url('../images/64_user.png');
+    margin: 4px; //background-size: 64px 64px;
+    background-repeat: no-repeat;   
+}
+
+#pnl-utenti {
+    background-image: url('../images/64_users.png');
+    margin: 4px; //background-size: 64px 64px;
+    background-repeat: no-repeat;   
+}
+
+#pnl-segnalazioni {
+    background-image: url('../images/64_ticket.png');
+    margin: 4px;
+    background-repeat: no-repeat;
+}
+
+#pnl-segnalazioni_ricerca {
+    background-image: url('../images/64_search.png');
+    margin: 4px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/*
+    .panel li{
+        display: block;
+        width: 400px;
+        height: 130px;
+        margin:auto;
+        margin-top: 15px;
+        border: 1px solid #1c345a;
+        position: relative;
+    }
+
+    .panel li a{
+        display: block;
+        position: absolute;
+        // per allineare il testo a meta' di un block il trucco e' usare
+        //   una line-height della stessa altezza del blocco 
+        line-height: 130px;
+        vertical-align: middle;
+        padding-left: 150px;
+        font-size: 1.2em;
+    }
+
+
+*/
+
+
+
+
+
+
+/* Stili degli input e output e form */
+
+.none{
+    list-style: none;
+}
+
+
+.output-form{
+    line-height: 1.4em;
+    //border-bottom: 1px solid #666666;
+}
+
+.output-form li{
+    padding-bottom: 8px;
+    //border-bottom: 1px solid #666666;
+}
+
+
+
+.input-form{
+    line-height: 2.8em;
+    // border-top: 1px solid #666666;
+    // border-bottom: 1px solid #666666;
+}
+
+.input-form h3, .output-form h3 {
+    //font-size: 16px;
+    border-top: solid 1px #666666;
+}
+
+
+label.full{
+    display: inline-block;
+    width: 75%;
+}
+
+label{
+    display: inline-block;
+    width: 25%;
+}
+
+
+.input-form input[type=text], 
+.input-form input[type=password]
+{
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #333333;
+    font-size: 14px;
+    // height: 1.5em;
+    padding: 3px;
+}
+
+.input-form input[type=submit], 
+.input-form button,
+.output-form input[type=submit],
+.output-form button
+{
+    // width: auto;
+    min-width: 100px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #cccccc;
+    //height: 2em;
+}
+
+.input-form input[type=submit]:hover, 
+.input-form input[type=submit]:active,
+.input-form button:hover,
+.input-form button:active,
+.output-form input[type=submit]:hover, 
+.output-form input[type=submit]:active,
+.output-form button:hover,
+.output-form button:active
+{
+    background: #666666;
+    color: #ffffff;
+    border-radius: 5px;
+    // text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.btn-group input[type=submit], .btn-group button{
+    display: inline-block;
+}
+
+.btn-group{
+    text-align: center;
+}
+
+
+.input-form select{
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    font-size: 14px;
+    padding: 3px;
+    //line-height: 2.8em;
+}
+
+
+
+
+
+/*
+input{
+    border: 1px solid #333333;
+    font-size: 14px;
+    // height: 1.5em;
+    padding: 3px;
+}
+*/
+
+/*
+input[type=submit], button{
+    color: #000000;
+    font-size: 14px;
+    background-color: #cccccc;
+    height: 2em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    min-width: 100px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+input[type=submit]:hover, button:hover{
+    background: #666666;
+    color: #ffffff;
+    // border-radius: 5px;
+    // text-decoration: underline;
+    cursor: pointer;
+}
+*/
+
+/* input[type=reset], button{
+    color: #000000;
+    background-color: #cccccc;
+    height: 2em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    min-width: 100px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+input[type=reset]:hover, button:hover{
+    background: #666666;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+*/
+
+
+
+/*
+.input-form ul {
+    
+    line-height: 14px;
+    border-bottom: 1px solid #666666;
+}
+
+.input-form li {
+	margin-top: 0;
+    margin-right: 0;
+	margin-bottom: 15px;
+    margin-left: 2px;
+
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	/**display:inline; /* ie7 *//*
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* stile delle tabelle */
+
+table {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin-top: 5px;
+    line-height: 1.2em;
+    width: 100%;
+    //font-size: 14px; 
+    margin-bottom: 20px;
+}
+
+
+th, td {
+    border: 1px solid #333333;
+    border-collapse: collapse;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+th{
+    background-color: #666666;
+    line-height: 1.8em;
+    color: white;
+    font-weight: bold;
+}
+
+.segnalazione_col-small{
+    width: 10%;
+}
+
+.segnalazione_col-large{
+    width: 30%;
+}
+
+
+
+
+
+
+.iscrizione-col-small{
+    width: 9%;
+}
+
+.iscrizione-col-large{
+    width: 20%;
+}
+
+.reg-col-small{
+    width: 10%;
+}
+
+.reg-col-large{
+    width: 20%;
+}
+
+.commissione-col{
+    width: 50%;
+}
+
+tr, td{
+    background-color: #eeeeee;
+}
+
+tr.alt-row, tr.alt-row td{
+    background-color: #cccccc;
+}
+
+
+
+
+
+
+
+#content {
+    float: left;
+    width: 75%;
+    margin-bottom: 10px;
+    /* min-height: 300px; */
+}
+
+
+
+
+
+
+#sidebar {
+    /* background-color: #eeeeee; */
+    float: right;
+    width: calc(25% - 30px);
+    margin-bottom: 20px;
+}
+
+
+.clear{
+    clear: both; 
+    width: 0px; 
+    height: 0px;
+}
+
+#footer {
+    clear: both;
+    display: block;
+    line-height: 20px;
+    margin-top: 5px;
+    padding-top: 4px;
+    text-align: center;
+    /* background: #ffffff; */
+    border-top: solid 1px #666666;
+}
+
+#footer p{
+    /*display: block; */
+    margin-top: 2px;
+    margin-bottom: 2px;   
+}
+
+.validator{
+    text-align: center;
+	
+    /* padding-bottom: 5px; */
+}
+
+.validator p{
+    margin-bottom: 0; 
+    /* padding-bottom: 5px; */
+}
+
+/* decorazioni degli elementi */
+
+.xhtml {
+    padding-left: 20px;
+    margin-left: 5px;
+    background: url('../images/16_html5.png') no-repeat left center;
+}
+
+.css {
+    padding-left: 20px;
+    margin-left: 15px;
+    background: url('../images/16_css3.png') no-repeat left center;
+}
+
+
+
+
+
+
+
+
+
+/*============================*
+	Inizio parte responsive
+ *============================*/
+
+/* --> è la larghezza dei notebook */
+@media screen and (max-width: 1023px) {
+	
+    #page {
+        margin: 0;
+        width: calc(100% - 40px);
+        /* background: #ff00ff;*/
+    }
+}
+
+
+
+/* --> è la larghezza dei tablet */
+@media screen and (max-width: 768px) {
+	
+    #content {
+	float: none;
+	clear: both;
+	width: 100%;
+    }
+	
+    #sidebar {
+	float: none;
+	clear: both;
+	width: 100%;
+        padding-top: 15px;
+        border-top: solid 1px #666666;
+    }
+	
+}
+
+
+
+
+/* --> è solo per la larghezza del menu 
+	CAMBIA MENU
+ */
+@media screen and (max-width: 690px) {
+    .menu {
+	position: relative;
+	min-height: 32px; 
+    }	
+
+    .menu ul {
+	width: 200px;
+	padding: 5px 0;
+	position: absolute;
+	top: -12px;
+	left: 0;
+	border: solid 1px #aaa;
+	background: #fff url(../images/16_menu.png) no-repeat 10px 10px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    }
+    
+    .menu li {
+	display: none; /* nasconde tutte le voci del menu <li> */
+	margin: 0;
+    }
+
+    .menu .current_page_item {
+	display: block; /* mostra solo la voce del menu <li> corrente */
+    }
+    
+    .menu a {
+	display: block;
+	padding: 5px 5px 5px 32px;
+	text-align: left;
+    }
+
+    .menu .current_page_item a {
+	background: none;
+	color: #000000;
+    }
+
+    /* on menu hover */
+    .menu ul:hover {
+	background-image: none;
+    }
+
+    .menu ul:hover li {
+    	display: block;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+	margin-left: 0px;
+    }
+    
+    .menu ul:hover .current_page_item {
+	background: url(../images/16_checkmark.png) no-repeat 10px 5px;
+    }
+	
+}
+
+
+
+
+/* --> è solo per cambiare
+ * INTESTAZIONE
+ */
+@media screen and (max-width: 580px) {
+    
+    div#logo h1 {
+        // background-image: url('../images/logo_unica_dist_256x96.png');
+    //    background-repeat: no-repeat;
+        background-position: top left;
+        //background-color: #cccccc;
+        height: 48px;
+       // vertical-align: middle;
+        padding-left: 10px;
+        padding-right: 10px;
+        //margin-top: 0px;
+       // margin-bottom: 0px;
+	padding-top: 100px;
+	//	padding-bottom: 0;
+        line-height: 42px;
+		font-size: 36px;
+	//	font-style: italic;
+	//	font-weight: bold;
+        //color: #444444;
+        //display: block;
+        text-align: right;
+        //background-size: 220px auto;
+    }
+	
+}
+
