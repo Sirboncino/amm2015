@@ -125,24 +125,30 @@
     <ul>
         <li>Ruolo utilizzatore:</li>
         <ul>
-            <li>username: utilizzatore1</li>
-            <li>password: roberto</li>
+            <li>username: utilizzatore1<br>
+                password: roberto<br>&nbsp;</li>
+            
+            <li>username: utilizzatore2<br>
+            password: roberto<br>&nbsp;</li>
         </ul>
     </ul>
     
     <ul>
         <li>Ruolo operatore:</li>
         <ul>
-            <li>username: operatore1</li>
-            <li>password: roberto</li>
+            <li>username: operatore1<br>
+                password: roberto<br>&nbsp;</li>
+            
+            <li>username: operatore2<br>
+            password: roberto<br>&nbsp;</li>
         </ul>
     </ul>
     
     <ul>
         <li>Ruolo amministratore:</li>
         <ul>
-            <li>username: admin</li>
-            <li>password: admin</li>
+            <li>username: admin<br>
+            password: admin<br>&nbsp;</li>
         </ul>
     </ul>
     
