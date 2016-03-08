@@ -119,7 +119,7 @@
     <h2>Accesso al progetto</h2>
     <p>
         La pagina iniziale del progetto (Pagina di <strong>Login</strong>)si trova sulla URL 
-        <a href="php/login">http://spano.sc.unica.it/amm2015/toluRoberto/segnaliAMMo/php/login</a>
+        <a href="php/login">http://spano.sc.unica.it/amm2015/toluRoberto/php/login</a>
     <p>
     <p>Si pu&ograve; accedere all'applicazione con le seguenti credenziali</p>
     <ul>
