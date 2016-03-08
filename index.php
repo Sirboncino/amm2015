@@ -9,8 +9,8 @@
     <h1>Accesso all'applicazione del progetto</h1>
     <p>
         Si può scaricare il codice facendo un git clone 
-        al seguente indirizzo <strong>(da modificare)</strong>
-        <a href="https://github.com/davidespano/esAMM2014">https://github.com/davidespano/esAMM2014</a>
+        al seguente indirizzo 
+        <a href="https://github.com/Sirboncino/amm2015">https://github.com/Sirboncino/amm2015</a>
     </p>
 
     <h2>Descrizione dell'applicazione</h2>
@@ -118,7 +118,7 @@
     
     <h2>Accesso al progetto</h2>
     <p>
-        La homepage del progetto si trova sulla URL <strong>(da modificare)</strong> 
+        La pagina iniziale del progetto (Pagina di <strong>Login</strong>)si trova sulla URL 
         <a href="php/login">http://spano.sc.unica.it/amm2015/toluRoberto/segnaliAMMo/php/login</a>
     <p>
     <p>Si pu&ograve; accedere alla applicazione con le seguenti credenziali</p>
