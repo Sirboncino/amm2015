@@ -255,8 +255,7 @@ div#logo span {
 }
 
 .panel li a:link{
-    text-decoration:  none;
-    //color: #9e1616;
+    text-decoration: none;
 }
 
 .panel li {
@@ -318,7 +317,7 @@ div#logo span {
 
 #pnl-anagrafica {
     background-image: url('../images/64_user.png');
-    margin: 4px; //background-size: 64px 64px;
+    margin: 4px;
     background-repeat: no-repeat;   
 }
 
@@ -384,7 +383,6 @@ label{
     width: 50%;
     border: 1px solid #333333;
     font-size: 14px;
-    // height: 1.5em;
     padding: 3px;
 }
 
@@ -423,7 +421,6 @@ label{
     background: #666666;
     color: #ffffff;
     border-radius: 5px;
-    // text-decoration: underline;
     cursor: pointer;
 }
 
@@ -671,7 +668,7 @@ tr.alt-row, tr.alt-row td{
     
     div#logo h1 {
         background-position: top left;
-        //background-color: #cccccc;
+        /* background-color: #cccccc; */
         height: 48px;
         padding-left: 10px;
         padding-right: 10px;
@@ -682,4 +679,3 @@ tr.alt-row, tr.alt-row td{
     }
 	
 }
-
