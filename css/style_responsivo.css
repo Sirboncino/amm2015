@@ -504,8 +504,8 @@ tr.alt-row, tr.alt-row td{
 #sidebar {
     /* background-color: #eeeeee; */
     float: right;
-    /* width: calc(25% - 30px); */
-    width: 25%;
+    width: calc(25% - 30px);
+    /* width: 25%; */
     margin-bottom: 20px;
 }
 
@@ -571,8 +571,8 @@ tr.alt-row, tr.alt-row td{
 	
     #page {
         margin: 0;
-        /* width: calc(100% - 40px); */
-        width: 100%;
+        width: calc(100% - 40px);
+        /* width: 100%; */
     }
 }
 
