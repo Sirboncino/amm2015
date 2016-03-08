@@ -323,7 +323,7 @@ div#logo span {
 
 #pnl-utenti {
     background-image: url('../images/64_users.png');
-    margin: 4px; //background-size: 64px 64px;
+    margin: 4px;
     background-repeat: no-repeat;   
 }
 
