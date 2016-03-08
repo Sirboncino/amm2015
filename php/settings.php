@@ -37,7 +37,7 @@ class Settings {
                     break;
                 case 'spano.sc.unica.it':
                     // configurazione pubblica
-                    self::$appPath = 'http://' . $_SERVER['HTTP_HOST'] . '/amm2015/toluRoberto/segnaliAMMo/';
+                    self::$appPath = 'http://' . $_SERVER['HTTP_HOST'] . '/amm2015/toluRoberto/';
                     break;
                 
                 case '192.168.0.5':
