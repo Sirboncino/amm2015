@@ -82,13 +82,13 @@ textarea {
     margin-right: auto;
     margin-bottom: 15px;
     margin-left: auto;
-	
     padding: 20px;
     width: 964px;
     background-color: white;
     text-align: left;
     box-shadow: 0 0 10px gray;	
 }
+
 
 #header {
     margin-top: 0;
@@ -120,7 +120,6 @@ p.logout a:link, p.logout a:visited{
     padding-left: 18px;
 }
     
-
 
 div#logo h1 {
     background-image: url('../images/logo_unica_dist_256x96.png');
@@ -210,11 +209,13 @@ div#logo span {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 .error div{
     margin: 0px;
     background: url('../images/32_warning.png') no-repeat left top;
     min-height: 32px;
 }
+
 
 
 /* stile per i messaggi di conferma */
@@ -314,7 +315,6 @@ div#logo span {
     background-image: url('../images/32_lifebuoy.png');
 }
 
-
 #pnl-anagrafica {
     background-image: url('../images/64_user.png');
     margin: 4px;
@@ -386,6 +386,7 @@ label{
     padding: 3px;
 }
 
+
 .input-form input[type=submit], 
 .input-form button,
 .output-form input[type=submit],
@@ -408,6 +409,7 @@ label{
     color: #000000;
     background-color: #cccccc;
 }
+
 
 .input-form input[type=submit]:hover, 
 .input-form input[type=submit]:active,
@@ -558,12 +560,8 @@ tr.alt-row, tr.alt-row td{
 
 
 
-
-
-
-
 /*============================*
-	Inizio parte responsive
+    Inizio parte responsive
  *============================*/
 
 /* --> è la larghezza dei notebook */
@@ -663,7 +661,7 @@ tr.alt-row, tr.alt-row td{
 
 
 
-/* --> è solo per cambiare
+/* --> è solo per cambiare 
  * INTESTAZIONE
  */
 @media screen and (max-width: 580px) {
